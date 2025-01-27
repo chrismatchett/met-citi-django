@@ -1,0 +1,48 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+/static/
+media/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Coverage reports
+.coverage
+*.cover
+*.hypothesis/
+
+# MySQL and PostgreSQL databases
+*.sqlite3
+*.db
+
+# Environment files
+.env
+.env.*
+
+# Django migrations
+*/migrations/*
+
+# Python specific
+pip-wheel-metadata/
+*.pkl
+*.db
+*.sqlite3
