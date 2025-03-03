@@ -1,5 +1,6 @@
 from django.urls import path
 from hello import views
+from hello.views import StockDataListCreate, StockDataDetail
 
 from hello.models import LogMessage
 
@@ -11,6 +12,8 @@ home_list_view = views.HomeListView.as_view(
 
 
 urlpatterns = [
+    path('api/v1/stocks/', StockDataListCreate.as_view(), name='stock-list'),
+    path('api/v1/stocks/<int:pk>/', StockDataDetail.as_view(), name='stock-detail'),
     path("", home_list_view, name="home"),
     path("hello/<name>", views.hello_there, name="hello_there"),
     path("about/", views.about, name="about"),

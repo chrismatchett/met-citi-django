@@ -5,6 +5,23 @@ from django.views.generic import ListView
 from hello.forms import LogMessageForm
 from hello.models import LogMessage
 
+from rest_framework import generics
+from hello.models import StockData
+from hello.serializers import StockDataSerializer
+
+# This is the StockData API
+class StockDataListCreate(generics.ListCreateAPIView):
+    """API endpoint for listing and adding stock data."""
+    queryset = StockData.objects.all()
+    serializer_class = StockDataSerializer
+
+class StockDataDetail(generics.RetrieveUpdateDestroyAPIView):
+    """API endpoint for retrieving, updating, or deleting a specific stock record."""
+    queryset = StockData.objects.all()
+    serializer_class = StockDataSerializer
+
+# The standard Website
+
 class HomeListView(ListView):
     """Renders the home page, with a list of all messages."""
     model = LogMessage
