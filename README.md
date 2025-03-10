@@ -2,6 +2,15 @@
 
 ## A Python Django API to retrieve and present Stock data
 
+After running the following code in Visual Code you should be able to do the following.
+
+* Launch a Python Web Server with the Django Framework
+* Use the default Django SQLite database as a Database Server
+* Download historic Stock Market data for the Shares you choose
+* Display the downloaded Stock Market data as an API using your Django Web Server
+
+---
+
 ### Requirements
 
 * Microsoft Windows 10/11
@@ -28,6 +37,17 @@
 
 ```
 pip install -r requirements.txt
+```
+
+---
+
+### Setting up the Django Admin user
+
+* Run the following command to create the Django admin user.
+* You can use these admin user details to login to the Admin interface of your Django Web Server.
+
+```
+python manage.py createsuperuser
 ```
 
 ---
