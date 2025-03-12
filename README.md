@@ -51,6 +51,10 @@ python manage.py migrate
 ```
 
 ```
+python manage.py makemigrations hello
+```
+
+```
 python manage.py migrate hello
 ```
 
