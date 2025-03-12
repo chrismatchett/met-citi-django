@@ -41,17 +41,6 @@ pip install -r requirements.txt
 
 ---
 
-### Setting up the Django Admin user
-
-* Run the following command to create the Django admin user.
-* You can use these admin user details to login to the Admin interface of your Django Web Server.
-
-```
-python manage.py createsuperuser
-```
-
----
-
 ### Setting up the Django database
 
 * Run the following command in the terminal to create the Django database.
@@ -59,6 +48,21 @@ python manage.py createsuperuser
 
 ```
 python manage.py migrate
+```
+
+```
+python manage.py migrate hello
+```
+
+---
+
+### Setting up the Django Admin user
+
+* Run the following command to create the Django admin user.
+* You can use these admin user details to login to the Admin interface of your Django Web Server.
+
+```
+python manage.py createsuperuser
 ```
 
 ---
